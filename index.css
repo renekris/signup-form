@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Norse-Bold";
-    src: url(/fonts/Norse-Bold.otf);
+    src: url(./fonts/Norse-Bold.otf);
     font-weight: bold;
 }
 
@@ -32,7 +32,7 @@ body {
 #image-container {
     display: flex;
     justify-content: center;
-    background-image: url(/images/lemons.jpg);
+    background-image: url(./images/lemons.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
