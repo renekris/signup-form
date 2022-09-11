@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css" />
+        <script src="index.js" defer></script>
         <title>Document</title>
     </head>
     <body>
@@ -17,12 +18,16 @@
         <div id="content">
             <p class="larger marginless">
                 This is not a real online service! You know you need something
-                like this in your life to help you realize tour deepest dreams.
+                like this in your life to help you realize your deepest dreams.
             </p>
             <p class="larger marginless">Sign up <i>now</i> to get started.</p>
             <p class="larger">You know <i>you</i> want to.</p>
 
-            <form action="javascript:void(0);" method="post">
+            <form
+                action="/hell"
+                method="post"
+                onsubmit="return checkPasswords()"
+            >
                 <div class="main-form">
                     <h1>Let's do this!</h1>
                     <div class="form-row">
@@ -62,6 +67,7 @@
                                 id="user-mail"
                                 required
                                 placeholder="john@doe.com"
+                                autocomplete="email"
                             />
                         </label>
                         <label for="user-number">
@@ -88,6 +94,7 @@
                                 minlength="8"
                                 placeholder="********"
                                 title="Password has to contain at least an uppercase, lowercase and a number character and has to be more than 8 characters in length"
+                                autocomplete="new-password"
                             />
                         </label>
                         <label for="user-password-confirm">
@@ -96,13 +103,14 @@
                                 <span aria-label="required">*</span>
                             </span>
                             <input
-                                type="text"
+                                type="password"
                                 id="user-password-confirm"
                                 required
                                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                                 minlength="8"
                                 placeholder="********"
                                 title="Password has to contain at least an uppercase, lowercase and a number character and has to be more than 8 characters in length"
+                                autocomplete="new-password"
                             />
                         </label>
                     </div>
