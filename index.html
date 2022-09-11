@@ -8,7 +8,63 @@
         <title>Document</title>
     </head>
     <body>
-        <div id="sidebar"></div>
-        <div id="content"></div>
+        <div id="image-container">
+            <div class="logo">
+                <img src="/images/odin-lined.png" alt="Odin Logo" />
+                <p>Odin</p>
+            </div>
+        </div>
+        <div id="content">
+            <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize tour deepest dreams.
+                Sign up <i>now</i> to get started.
+            </p>
+            <p>You know <i>you</i> want to.</p>
+
+            <form action="javascript:void(0);" method="post">
+                <h1>Let's do this!</h1>
+
+                <div class="main-form">
+                    <div class="form-row">
+                        <label for="user-fname">
+                            FIRST NAME
+                            <input type="text" name="fname" id="user-fname" />
+                        </label>
+                        <label for="user-lname">
+                            LAST NAME
+                            <input type="text" name="lname" id="user-lname" />
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label for="user-mail">
+                            EMAIL
+                            <input type="email" name="email" id="user-mail" />
+                        </label>
+                        <label for="user-number">
+                            PHONE NUMBER
+                            <input type="tel" name="number" id="user-number" />
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label for="user-password">
+                            FIRST NAME
+                            <input
+                                type="password"
+                                name="password"
+                                id="user-password"
+                            />
+                        </label>
+                        <label for="user-password-confirm">
+                            FIRST NAME
+                            <input type="text" id="user-password-confirm" />
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+
+            Already have an account? <a href="#">Log in</a>
+        </div>
     </body>
 </html>
